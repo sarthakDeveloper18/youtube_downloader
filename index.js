@@ -29,7 +29,7 @@ app.post("/search", function(req, res) {
         }
     }
     
-    const url = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" 
+    const url = "https://www.googleapis.com/youtube/v3/search?maxResults=10&part=snippet&q=" 
                 + finalQuery 
                 + "&key=" 
                 + process.env.APICREDENTIAL;
